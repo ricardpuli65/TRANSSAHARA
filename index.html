@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -30,10 +29,9 @@
       top: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(0, 0, 0, 0.72);
-      padding: 14px 18px;
+      background: rgba(0, 0, 0, 0.78);
+      padding: 14px 10px;
       text-align: center;
-      backdrop-filter: blur(5px);
       overflow-x: auto;
       white-space: nowrap;
     }
@@ -54,7 +52,7 @@
       text-align: center;
       padding: 80px 25px 40px;
       background:
-        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.65)),
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.68)),
         url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=85");
       background-size: cover;
       background-position: center;
@@ -69,7 +67,7 @@
       letter-spacing: 3px;
       line-height: 1;
       margin-bottom: 20px;
-      text-shadow: 0 4px 15px rgba(0,0,0,.7);
+      text-shadow: 0 4px 15px rgba(0,0,0,.8);
     }
 
     .hero h2 {
@@ -94,7 +92,7 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-      background: rgba(0,0,0,.3);
+      background: rgba(0,0,0,.35);
     }
 
     section {
@@ -112,7 +110,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,.58);
+      background: rgba(0,0,0,.60);
     }
 
     .content {
@@ -137,4 +135,205 @@
 
     .route {
       background-image:
-        url("https://images.unsplash.com/photo-1539650116574-75c0c6
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1800&q=85");
+    }
+
+    .adventure {
+      background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=85");
+    }
+
+    .philosophy {
+      background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=85");
+    }
+
+    .contact {
+      background:
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.82)),
+        url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1800&q=85");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .email {
+      display: block;
+      margin: 12px auto;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 15px 28px;
+      background: white;
+      color: #111;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #050505;
+      color: #ccc;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        font-size: 12px;
+        margin: 0 5px;
+      }
+
+      .hero p,
+      .content p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 80px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#inici">INICI</a>
+    <a href="#ruta">LA RUTA</a>
+    <a href="#aventura">AVENTURA</a>
+    <a href="#filosofia">FILOSOFIA</a>
+    <a href="#contacte">CONTACTE</a>
+  </nav>
+
+  <header class="hero" id="inici">
+    <div class="hero-content">
+      <h1>TRANS-SAHARA</h1>
+
+      <h2>Una nova manera de descobrir el Marroc</h2>
+
+      <p>
+        Una gran ruta d'aventura que uneix paisatge, cultura,
+        esport i desenvolupament local.
+      </p>
+
+      <a class="btn" href="#ruta">DESCOBREIX EL PROJECTE</a>
+    </div>
+  </header>
+
+  <section class="route" id="ruta">
+    <div class="content">
+
+      <h2>La ruta</h2>
+
+      <p>
+        TRANS-SAHARA és una gran ruta circular d'aproximadament
+        895 quilòmetres dividida en 5 blocs i 36 etapes.
+      </p>
+
+      <p>
+        Marrakech → El Jadida → Safi → Essaouira →
+        Agadir → Marrakech.
+      </p>
+
+      <p>
+        Cada etapa permet descobrir el territori a poc a poc,
+        connectant pobles, paisatges, costa, muntanya i desert.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="adventure" id="aventura">
+    <div class="content">
+
+      <h2>L'aventura</h2>
+
+      <p>
+        TRANS-SAHARA vol convertir el recorregut en una experiència
+        que es pugui viure de moltes maneres.
+      </p>
+
+      <p>
+        Caminar, pedalar amb buggy, avançar amb camell i,
+        en punts seleccionats, experimentar activitats especials
+        com tirolines o globus aerostàtics.
+      </p>
+
+      <p>
+        Cada aventurer disposarà d'una credencial pròpia
+        que podrà anar segellant al llarg del recorregut.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="philosophy" id="filosofia">
+    <div class="content">
+
+      <h2>Primer, l'autòcton</h2>
+
+      <p>
+        La filosofia del projecte és clara:
+        el desenvolupament de TRANS-SAHARA ha de beneficiar
+        primer les persones que viuen al territori.
+      </p>
+
+      <p>
+        Allotjaments, restauració, transport, guies,
+        comerç i serveis poden ser gestionats
+        per empreses i famílies locals.
+      </p>
+
+      <p>
+        El projecte aposta també per l'energia solar,
+        la gestió responsable de l'aigua i el respecte
+        absolut pel paisatge.
+      </p>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contacte">
+    <div class="content">
+
+      <h2>Contacte</h2>
+
+      <p>
+        TRANS-SAHARA està obert a col·laboracions,
+        institucions, inversors i persones interessades
+        en participar en el desenvolupament del projecte.
+      </p>
+
+      <a class="email" href="mailto:info@trans-sahara.com">
+        info@trans-sahara.com
+      </a>
+
+      <a class="email" href="mailto:ricardpuli65@gmail.com">
+        ricardpuli65@gmail.com
+      </a>
+
+      <a class="contact-button" href="mailto:ricardpuli65@gmail.com?subject=Informació%20sobre%20TRANS-SAHARA">
+        CONTACTA DIRECTAMENT
+      </a>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 TRANS-SAHARA · Projecte d'aventura i desenvolupament local al Marroc
+  </footer>
+
+</body>
+</html>
