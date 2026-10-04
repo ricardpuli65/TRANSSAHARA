@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -180,7 +181,7 @@ section::before {
 }
 
 /* =========================
-   FONS
+   FONS / FOTOS
 ========================= */
 
 .route {
@@ -197,7 +198,7 @@ section::before {
 
 .block2 {
   background-image:
-    linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,.82)),
+    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.80)),
     url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=90");
 }
 
@@ -214,7 +215,7 @@ section::before {
 }
 
 /* =========================
-   BLOCKS
+   BLOCKS I ETAPES
 ========================= */
 
 .block1 .content h2,
@@ -296,7 +297,7 @@ details.stage summary::-webkit-details-marker {
 }
 
 /* =========================
-   INTERÈS
+   ADRECES D'INTERÈS
 ========================= */
 
 .interest {
@@ -358,13 +359,34 @@ footer {
 }
 
 @media (max-width:600px) {
-  nav a { font-size:16px; }
-  .hero h1 { font-size:58px; }
-  .hero h2 { font-size:34px; }
-  .content h2 { font-size:17vw; }
-  .content p { font-size:24px; }
-  .stage { font-size:22px; }
-  .stage-photo { height:220px; }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .content h2 {
+    font-size: 17vw;
+  }
+
+  .content p {
+    font-size: 24px;
+  }
+
+  .stage {
+    font-size: 22px;
+  }
+
+  .stage-photo {
+    height: 220px;
+  }
 }
 
 </style>
@@ -373,61 +395,88 @@ footer {
 <body>
 
 <nav>
-<a href="#inici">INICI</a>
-<a href="#ruta">LA RUTA</a>
-<a href="#block1">1r BLOCK</a>
-<a href="#block2">2n BLOCK</a>
-<a href="#aventura">AVENTURA</a>
-<a href="#filosofia">FILOSOFIA</a>
-<a href="#interes">ADRECES D'INTERÈS</a>
-<a href="#contacte">CONTACTE</a>
+  <a href="#inici">INICI</a>
+  <a href="#ruta">LA RUTA</a>
+  <a href="#block1">1r BLOCK</a>
+  <a href="#block2">2n BLOCK</a>
+  <a href="#aventura">AVENTURA</a>
+  <a href="#filosofia">FILOSOFIA</a>
+  <a href="#interes">ADRECES D'INTERÈS</a>
+  <a href="#contacte">CONTACTE</a>
 </nav>
 
+<!-- =========================
+     PORTADA
+========================= -->
+
 <header class="hero" id="inici">
-<div class="hero-content">
 
-<h1>TRANS-SAHARA</h1>
-<h2>Una nova manera de descobrir el Marroc</h2>
+  <div class="hero-content">
 
-<p>
-Una gran ruta d'aventura que uneix paisatge,
-cultura, esport i desenvolupament local.
-</p>
+    <h1>TRANS-SAHARA</h1>
 
-<div class="hero-keywords">
-<div class="hero-keyword">LA RUTA</div>
-<div class="hero-keyword">L'AVENTURA</div>
-<div class="hero-keyword">PRIMER, L'AUTÒCTON</div>
-</div>
+    <h2>Una nova manera de descobrir el Marroc</h2>
 
-<a class="btn" href="#ruta">DESCOBREIX EL PROJECTE</a>
+    <p>
+      Una gran ruta d'aventura que uneix paisatge,
+      cultura, esport i desenvolupament local.
+    </p>
 
-</div>
+    <div class="hero-keywords">
+
+      <div class="hero-keyword">
+        LA RUTA
+      </div>
+
+      <div class="hero-keyword">
+        L'AVENTURA
+      </div>
+
+      <div class="hero-keyword">
+        PRIMER, L'AUTÒCTON
+      </div>
+
+    </div>
+
+    <a class="btn" href="#ruta">
+      DESCOBREIX EL PROJECTE
+    </a>
+
+  </div>
+
 </header>
 
+<!-- =========================
+     LA RUTA
+========================= -->
+
 <section class="route" id="ruta">
-<div class="content">
 
-<h2>LA RUTA</h2>
+  <div class="content">
 
-<p>
-TRANS-SAHARA és una gran ruta circular
-d'aproximadament <strong>895 quilòmetres</strong>,
-dividida en <strong>5 blocs i 36 etapes</strong>.
-</p>
+    <h2>LA RUTA</h2>
 
-<p><strong>
-Marrakech → El Jadida → Safi →
-Essaouira → Agadir → Marrakech.
-</strong></p>
+    <p>
+      TRANS-SAHARA és una gran ruta circular
+      d'aproximadament <strong>895 quilòmetres</strong>,
+      dividida en <strong>5 blocs i 36 etapes</strong>.
+    </p>
 
-<p>
-Cada etapa permet descobrir el territori
-a poc a poc, connectant pobles,
-paisatges, costa, muntanya i desert.
-</p>
+    <p>
+      <strong>
+        Marrakech → El Jadida → Safi →
+        Essaouira → Agadir → Marrakech.
+      </strong>
+    </p>
 
-</div>
+    <p>
+      Cada etapa permet descobrir el territori
+      a poc a poc, connectant pobles,
+      paisatges, costa, muntanya i desert.
+    </p>
+
+  </div>
+
 </section>
 
 <!-- =========================
@@ -435,230 +484,30 @@ paisatges, costa, muntanya i desert.
 ========================= -->
 
 <section class="block1" id="block1">
-<div class="content">
 
-<h2>1r BLOCK</h2>
+  <div class="content">
 
-<p class="block-subtitle">
-MARRAKECH → EL JADIDA
-</p>
+    <h2>1r BLOCK</h2>
 
-<p>
-Uns <strong>200 quilòmetres</strong> dividits
-en <strong>8 etapes orientatives</strong>.
-</p>
+    <p class="block-subtitle">
+      MARRAKECH → EL JADIDA
+    </p>
 
-<p>
-Aquest primer bloc surt de Marrakech i avança
-cap a l'Atlàntic fins arribar a El Jadida.
-La <strong>N7</strong> serveix com un dels grans
-eixos de referència del recorregut.
-</p>
+    <p>
+      Uns <strong>200 quilòmetres</strong>
+      dividits en <strong>8 etapes orientatives</strong>.
+    </p>
 
-<div class="stage-list">
+    <p>
+      Aquest primer bloc surt de Marrakech
+      i avança cap a l'Atlàntic fins arribar a El Jadida.
+      La <strong>N7</strong> serveix com un dels grans
+      eixos de referència del recorregut.
+    </p>
 
-<details class="stage">
-<summary>
-<strong>ETAPA 1</strong><br>
-Marrakech → Tamansourt / Harbil<br>
-Aproximadament 24 km
-<span class="click-info">▼ CLICA PER DESCOBRIR L'ETAPA</span>
-</summary>
+    <div class="stage-list">
 
-<div class="stage-extra">
-<h3>🌴 SORTIDA DE MARRAKECH</h3>
-<p>
-La primera etapa marca l'inici de l'aventura.
-L'aventurer deixa Marrakech i comença
-a descobrir el territori que envolta la ciutat.
-</p>
-
-<h3>🌴 EL PALMERAR</h3>
-<p>
-Una de les possibilitats és travessar
-a peu part del Palmerar de Marrakech,
-gaudint del paisatge abans de continuar
-cap a Tamansourt i Harbil.
-</p>
-
-<p>
-<strong>TRANS-SAHARA proposa el punt de referència.
-L'aventurer decideix el seu camí.</strong>
-</p>
-</div>
-</details>
-
-<details class="stage">
-<summary>
-<strong>ETAPA 2</strong><br>
-Tamansourt / Harbil → Sidi Bou Othmane<br>
-Aproximadament 26 km
-<span class="click-info">▼ CLICA PER DESCOBRIR L'ETAPA</span>
-</summary>
-
-<div class="stage-extra">
-<h3>⛰️ CAP A SIDI BOU OTHMANE</h3>
-<p>
-L'etapa avança progressivament cap a
-un paisatge més obert, combinant pistes,
-camins rurals i zones de terreny pedregós.
-</p>
-
-<p>
-Sidi Bou Othmane serveix com a punt
-de referència per continuar l'aventura.
-</p>
-</div>
-</details>
-
-<details class="stage">
-<summary>
-<strong>ETAPA 3</strong><br>
-Sidi Bou Othmane → zona de Ben Guerir<br>
-Aproximadament 25 km
-<span class="click-info">▼ CLICA PER DESCOBRIR L'ETAPA</span>
-</summary>
-
-<div class="stage-extra">
-<h3>🏜️ TERRITORI DE REHAMNA</h3>
-<p>
-L'aventurer entra en un territori
-de grans espais oberts, zones rurals
-i paisatges característics de Rehamna.
-</p>
-
-<p>
-Ben Guerir és un dels grans punts
-de referència d'aquesta part del recorregut.
-</p>
-</div>
-</details>
-
-<details class="stage">
-<summary>
-<strong>ETAPA 4</strong><br>
-Zona de Ben Guerir → següent punt de referència<br>
-Aproximadament 25 km
-<span class="click-info">▼ CLICA PER DESCOBRIR L'ETAPA</span>
-</summary>
-
-<div class="stage-extra">
-<h3>🧭 L'AVENTURA CONTINUA</h3>
-<p>
-A partir de Ben Guerir, el recorregut
-continua cap a l'oest buscant camins,
-pistes i poblacions que permetin avançar
-progressivament cap a l'Atlàntic.
-</p>
-</div>
-</details>
-
-<details class="stage">
-<summary>
-<strong>ETAPA 5</strong><br>
-Continuació cap a les planes de Doukkala<br>
-Aproximadament 25 km
-<span class="click-info">▼ CLICA PER DESCOBRIR L'ETAPA</span>
-</summary>
-
-<div class="stage-extra">
-<h3>🌾 LES PLANES DE DOUKKALA</h3>
-<p>
-El paisatge canvia progressivament
-i apareixen grans extensions agrícoles,
-petites poblacions i camins rurals.
-</p>
-</div>
-</details>
-
-<details class="stage">
-<summary>
-<strong>ETAPA 6</strong><br>
-Travessa del territori rural cap a la costa<br>
-Aproximadament 25 km
-<span class="click-info">▼ CLICA PER DESCOBRIR L'ETAPA</span>
-</summary>
-
-<div class="stage-extra">
-<h3>🐪 MARROC RURAL</h3>
-<p>
-Una etapa pensada per descobrir
-el territori rural, les petites poblacions
-i la vida quotidiana de les comunitats locals.
-</p>
-
-<p>
-És precisament en aquests territoris
-on la filosofia <strong>PRIMER, L'AUTÒCTON</strong>
-pot tenir un paper especialment important.
-</p>
-</div>
-</details>
-
-<details class="stage">
-<summary>
-<strong>ETAPA 7</strong><br>
-Aproximació a El Jadida<br>
-Aproximadament 25 km
-<span class="click-info">▼ CLICA PER DESCOBRIR L'ETAPA</span>
-</summary>
-
-<div class="stage-extra">
-<h3>🌊 CAP A L'ATLÀNTIC</h3>
-<p>
-Després de dies avançant des de Marrakech,
-la proximitat de l'oceà Atlàntic marca
-un canvi important en el paisatge.
-</p>
-</div>
-</details>
-
-<details class="stage">
-<summary>
-<strong>ETAPA 8</strong><br>
-Arribada a El Jadida i a l'oceà Atlàntic<br>
-Aproximadament 25 km
-<span class="click-info">
-▼ CLICA AQUÍ · DESCOBREIX QUÈ POTS VISITAR
-</span>
-</summary>
-
-<div class="stage-extra">
-
-<h3>🏰 CIUTAT PORTUGUESA D'EL JADIDA</h3>
-
-<p>
-En arribar a El Jadida, l'aventurer pot
-descobrir l'antiga ciutat portuguesa de
-Mazagan, les seves muralles, bastions,
-carrerons i la famosa cisterna portuguesa.
-</p>
-
-<img
-class="stage-photo"
-src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85"
-alt="Paisatge del Marroc">
-
-<h3>🌊 L'OCEÀ ATLÀNTIC</h3>
-
-<p>
-Després d'uns 200 quilòmetres des de Marrakech,
-l'arribada a l'Atlàntic marca el final
-del primer gran bloc de TRANS-SAHARA.
-</p>
-
-<h3>🚆 OPCIONAL · CASABLANCA</h3>
-
-<p>
-Qui ho desitgi podrà dedicar un dia
-a visitar Casablanca abans de continuar
-l'aventura.
-</p>
-
-<h3>🌊 OPCIONAL · OUALIDIA I LES COVES</h3>
-
-<p>
-L'aventurer que disposi de més temps
-també podrà descobrir la costa d'Oualidia,
-la seva llacuna i les coves
-de la costa atlà
+<!-- =========================
+     FINAL PART 1
+     CONTINUA AMB PART 2
+========================= -->
