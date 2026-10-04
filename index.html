@@ -1,10 +1,10 @@
- DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>TRANS-SAHARA | L'aventura comença aquí</title>
+  <title>TRANS-SAHARA | Aventura pel Marroc</title>
 
   <style>
     * {
@@ -13,164 +13,218 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f5efe3;
-      color: #333;
+      background: #111;
+      color: white;
       line-height: 1.6;
     }
 
-    header {
-      background: #a45c24;
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
-
-    header h1 {
-      font-size: 42px;
-      letter-spacing: 3px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 20px;
-    }
-
     nav {
-      background: #6f3d1b;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.72);
+      padding: 14px 18px;
       text-align: center;
-      padding: 14px 10px;
+      backdrop-filter: blur(5px);
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 12px;
+      margin: 0 8px;
+      font-size: 14px;
       font-weight: bold;
     }
 
     .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 65px 20px;
-      background: #e8d2ad;
+      padding: 80px 25px 40px;
+
+      background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.65)),
+        url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=85");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 12vw, 95px);
+      letter-spacing: 3px;
+      line-height: 1;
+      margin-bottom: 20px;
+      text-shadow: 0 4px 15px rgba(0,0,0,.7);
     }
 
     .hero h2 {
-      color: #8b4d24;
-      font-size: 34px;
-      margin-bottom: 20px;
+      font-size: clamp(20px, 5vw, 34px);
+      margin-bottom: 22px;
+      text-shadow: 0 3px 10px #000;
     }
 
     .hero p {
-      max-width: 800px;
-      margin: auto;
       font-size: 19px;
-    }
-
-    .section {
-      max-width: 1100px;
+      max-width: 720px;
       margin: auto;
-      padding: 55px 20px;
+      text-shadow: 0 2px 8px #000;
     }
 
-    .section h2 {
-      text-align: center;
-      color: #8b4d24;
-      font-size: 30px;
-      margin-bottom: 30px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    }
-
-    .card h3 {
-      color: #a45c24;
-      margin-bottom: 10px;
-    }
-
-    .adventure {
-      text-align: center;
-    }
-
-    .activities {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+    .btn {
+      display: inline-block;
       margin-top: 30px;
+      padding: 14px 25px;
+      border: 2px solid white;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background: rgba(0,0,0,.3);
     }
 
-    .activity {
-      background: #8b4d24;
-      color: white;
-      padding: 15px 22px;
-      border-radius: 25px;
-      font-weight: bold;
+    section {
+      min-height: 75vh;
+      padding: 90px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,.58);
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: clamp(32px, 8vw, 55px);
+      margin-bottom: 25px;
+      text-shadow: 0 3px 10px #000;
+    }
+
+    .content p {
+      font-size: 18px;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 7px #000;
     }
 
     .route {
-      background: #fff;
-      border-left: 6px solid #a45c24;
-      padding: 25px;
-      margin-top: 25px;
-      border-radius: 8px;
+      background-image:
+        url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1800&q=85");
     }
 
-    .route p {
-      margin: 8px 0;
+    .adventure {
+      background-image:
+        url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=85");
     }
 
-    .philosophy {
-      background: #d9c29c;
-      text-align: center;
-      padding: 55px 20px;
+    .culture {
+      background-image:
+        url("https://images.unsplash.com/photo-1548018560-c7196548e84d?auto=format&fit=crop&w=1800&q=85");
     }
 
-    .philosophy h2 {
-      color: #6f3d1b;
-      margin-bottom: 20px;
+    .nature {
+      background-image:
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=85");
     }
 
-    .philosophy p {
-      max-width: 850px;
-      margin: auto;
-      font-size: 18px;
+    .local {
+      background-image:
+        url("https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1800&q=85");
+    }
+
+    .stages {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .stage {
+      background: rgba(0,0,0,.60);
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 15px;
+      padding: 20px 12px;
+    }
+
+    .stage strong {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .numbers {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .number {
+      min-width: 130px;
+      padding: 18px;
+      background: rgba(0,0,0,.58);
+      border-radius: 15px;
+    }
+
+    .number b {
+      display: block;
+      font-size: 35px;
     }
 
     footer {
-      background: #3f2b1d;
-      color: white;
+      background: #080808;
       text-align: center;
-      padding: 30px 20px;
+      padding: 35px 20px;
+      color: #ccc;
     }
 
     footer strong {
-      color: #e8c891;
+      color: white;
+      font-size: 20px;
     }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 32px;
+      nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        text-align: left;
       }
 
-      .hero h2 {
-        font-size: 27px;
+      section {
+        min-height: 80vh;
       }
 
-      nav a {
-        display: inline-block;
-        margin: 5px 8px;
+      .hero p,
+      .content p {
+        font-size: 17px;
       }
     }
   </style>
@@ -178,105 +232,184 @@
 
 <body>
 
-  <header>
-    <h1>TRANS-SAHARA</h1>
-    <p>Una aventura. Un camí. Una experiència inoblidable.</p>
-  </header>
-
   <nav>
-    <a href="#projecte">El projecte</a>
-    <a href="#ruta">La ruta</a>
-    <a href="#aventura">L'aventura</a>
-    <a href="#filosofia">Filosofia</a>
+    <a href="#inici">INICI</a>
+    <a href="#projecte">PROJECTE</a>
+    <a href="#ruta">RUTA</a>
+    <a href="#aventura">AVENTURA</a>
+    <a href="#filosofia">FILOSOFIA</a>
   </nav>
 
-  <section class="hero">
-    <h2>El Camí de Sant Jaume del desert</h2>
+  <header class="hero" id="inici">
+    <div class="hero-content">
+      <h1>TRANS-SAHARA</h1>
+      <h2>Una gran aventura pel Marroc</h2>
 
-    <p>
-      TRANS-SAHARA és un projecte d'aventura que vol unir paisatge,
-      esport, cultura i població local a través d'una gran ruta pel Marroc.
-    </p>
-  </section>
+      <p>
+        TRANS-SAHARA és un projecte d'aventura que vol unir
+        paisatge, esport, cultura i població local a través
+        d'una gran ruta pel Marroc.
+      </p>
 
-  <section class="section" id="projecte">
-    <h2>Descobreix TRANS-SAHARA</h2>
+      <a class="btn" href="#projecte">DESCOBREIX EL PROJECTE</a>
+    </div>
+  </header>
 
-    <div class="cards">
+  <section class="culture" id="projecte">
+    <div class="content">
+      <h2>Molt més que una ruta</h2>
 
-      <div class="card">
-        <h3>895 km d'aventura</h3>
-        <p>
-          Una gran ruta circular dividida en 5 blocs i 36 etapes,
-          amb Marrakech com a punt de sortida i arribada.
-        </p>
-      </div>
+      <p>
+        TRANS-SAHARA proposa descobrir el Marroc d'una manera diferent:
+        avançant etapa a etapa i vivint el territori.
+      </p>
 
-      <div class="card">
-        <h3>Integració local</h3>
-        <p>
-          El projecte vol donar protagonisme als habitants,
-          comerços i serveis de les poblacions per on passa la ruta.
-        </p>
-      </div>
+      <p>
+        Una experiència que combina aventura, paisatge, esport,
+        cultura, gastronomia i contacte amb les poblacions locals.
+      </p>
 
-      <div class="card">
-        <h3>Turisme responsable</h3>
-        <p>
-          Respecte pel territori, protecció del medi ambient
-          i una filosofia basada en deixar una petjada positiva.
-        </p>
-      </div>
-
+      <p>
+        El projecte vol crear una ruta internacional amb identitat pròpia,
+        respectuosa amb l'entorn i capaç de generar oportunitats
+        als territoris per on passa.
+      </p>
     </div>
   </section>
 
-  <section class="section" id="ruta">
-    <h2>La gran ruta</h2>
+  <section class="route" id="ruta">
+    <div class="content">
+      <h2>La ruta</h2>
 
-    <div class="route">
-      <p><strong>Bloc 1:</strong> Marrakech → El Jadida — 200 km — 8 etapes</p>
-      <p><strong>Bloc 2:</strong> El Jadida → Safi — 150 km — 6 etapes</p>
-      <p><strong>Bloc 3:</strong> Safi → Essaouira — 120 km — 5 etapes</p>
-      <p><strong>Bloc 4:</strong> Essaouira → Agadir — 175 km — 7 etapes</p>
-      <p><strong>Bloc 5:</strong> Agadir → Marrakech — 250 km — 10 etapes</p>
+      <p>
+        Un gran recorregut circular amb sortida i arribada a Marràqueix,
+        passant per alguns dels paisatges i ciutats més emblemàtics
+        de la costa atlàntica marroquina.
+      </p>
+
+      <div class="stages">
+        <div class="stage">
+          <strong>Bloc 1</strong>
+          Marràqueix → El Jadida<br>
+          200 km · 8 etapes
+        </div>
+
+        <div class="stage">
+          <strong>Bloc 2</strong>
+          El Jadida → Safi<br>
+          150 km · 6 etapes
+        </div>
+
+        <div class="stage">
+          <strong>Bloc 3</strong>
+          Safi → Essaouira<br>
+          120 km · 5 etapes
+        </div>
+
+        <div class="stage">
+          <strong>Bloc 4</strong>
+          Essaouira → Agadir<br>
+          175 km · 7 etapes
+        </div>
+
+        <div class="stage">
+          <strong>Bloc 5</strong>
+          Agadir → Marràqueix<br>
+          250 km · 10 etapes
+        </div>
+      </div>
+
+      <div class="numbers">
+        <div class="number">
+          <b>895</b>
+          km
+        </div>
+
+        <div class="number">
+          <b>36</b>
+          etapes
+        </div>
+
+        <div class="number">
+          <b>5</b>
+          blocs
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section adventure" id="aventura">
-    <h2>Tu decideixes com viure l'aventura</h2>
+  <section class="adventure" id="aventura">
+    <div class="content">
+      <h2>Aventura</h2>
 
-    <p>
-      Cada etapa combina diferents formes de desplaçament.
-      L'aventurer podrà adaptar l'experiència a les seves capacitats
-      i preferències.
-    </p>
+      <p>
+        Cada etapa pot combinar diferents formes de desplaçament
+        i activitats: caminar, vehicles lleugers de pedals,
+        recorreguts amb camell i experiències especials
+        en punts seleccionats de la ruta.
+      </p>
 
-    <div class="activities">
-      <div class="activity">🚶 A peu</div>
-      <div class="activity">🚲 Buggy a pedals</div>
-      <div class="activity">🐪 Camell</div>
-      <div class="activity">🧗 Tirolina</div>
-      <div class="activity">🎈 Globus captiu</div>
+      <p>
+        Tirolines panoràmiques, globus captius i altres activitats
+        podran convertir determinats punts del recorregut
+        en experiències úniques.
+      </p>
+
+      <p>
+        Cada participant disposarà d'una credencial pròpia
+        que anirà registrant les etapes i experiències completades.
+      </p>
     </div>
   </section>
 
-  <section class="philosophy" id="filosofia">
-    <h2>Primer l'autòcton</h2>
+  <section class="nature">
+    <div class="content">
+      <h2>Un territori extraordinari</h2>
 
-    <p>
-      TRANS-SAHARA vol créixer amb el territori, no al seu marge.
-      Allotjament, restauració, transport, comerç i serveis han de
-      generar oportunitats per a les comunitats locals.
-      L'objectiu és que cada aventurer descobreixi el Marroc
-      mentre contribueix positivament als llocs que visita.
-    </p>
+      <p>
+        Des de les planes de l'interior fins a l'Atlàntic,
+        TRANS-SAHARA travessa paisatges molt diferents:
+        muntanyes, zones rurals, pobles, costa, platges
+        i espais naturals.
+      </p>
+
+      <p>
+        La ruta buscarà sempre els camins més interessants,
+        prioritzant el paisatge, els punts panoràmics
+        i els llocs amb valor cultural o natural.
+      </p>
+    </div>
+  </section>
+
+  <section class="local" id="filosofia">
+    <div class="content">
+      <h2>Primer, la població local</h2>
+
+      <p>
+        Un dels principis fonamentals de TRANS-SAHARA és que
+        l'activitat generada per la ruta beneficiï directament
+        les comunitats locals.
+      </p>
+
+      <p>
+        Allotjament, restauració, transport, guies, comerç
+        i altres serveis han de crear oportunitats
+        per als habitants de cada zona.
+      </p>
+
+      <p>
+        El projecte aposta per la sostenibilitat,
+        la protecció del territori, l'ús responsable de l'aigua
+        i l'energia solar, així com per una política estricta
+        de respecte i neteja de l'entorn.
+      </p>
+    </div>
   </section>
 
   <footer>
-    <p><strong>TRANS-SAHARA</strong></p>
-    <p>Del Mediterrani a l'Atlàntic. De l'aventura a la descoberta.</p>
-    <p>Projecte en desenvolupament · 2026</p>
+    <strong>TRANS-SAHARA</strong>
+    <p>Aventura · Paisatge · Cultura · Població local</p>
+    <p>Marroc</p>
   </footer>
 
 </body>
