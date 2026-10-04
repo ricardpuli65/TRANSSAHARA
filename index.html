@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -21,7 +22,8 @@
       font-family: Arial, Helvetica, sans-serif;
       background: #111;
       color: white;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 20px;
     }
 
     nav {
@@ -29,8 +31,8 @@
       top: 0;
       width: 100%;
       z-index: 1000;
-      background: rgba(0, 0, 0, 0.78);
-      padding: 14px 10px;
+      background: rgba(0, 0, 0, 0.82);
+      padding: 16px 10px;
       text-align: center;
       overflow-x: auto;
       white-space: nowrap;
@@ -39,8 +41,8 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 8px;
-      font-size: 14px;
+      margin: 0 10px;
+      font-size: 16px;
       font-weight: bold;
     }
 
@@ -50,54 +52,57 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 80px 25px 40px;
+      padding: 100px 25px 50px;
+
       background:
         linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.68)),
         url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=85");
+
       background-size: cover;
       background-position: center;
     }
 
     .hero-content {
-      max-width: 850px;
+      max-width: 900px;
     }
 
     .hero h1 {
-      font-size: clamp(48px, 12vw, 95px);
+      font-size: clamp(52px, 13vw, 100px);
       letter-spacing: 3px;
       line-height: 1;
-      margin-bottom: 20px;
-      text-shadow: 0 4px 15px rgba(0,0,0,.8);
+      margin-bottom: 25px;
+      text-shadow: 0 4px 15px rgba(0,0,0,.9);
     }
 
     .hero h2 {
-      font-size: clamp(20px, 5vw, 34px);
-      margin-bottom: 22px;
+      font-size: clamp(27px, 6vw, 40px);
+      margin-bottom: 25px;
       text-shadow: 0 3px 10px #000;
     }
 
     .hero p {
-      font-size: 19px;
-      max-width: 720px;
+      font-size: 23px;
+      max-width: 750px;
       margin: auto;
       text-shadow: 0 2px 8px #000;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 14px 25px;
+      margin-top: 35px;
+      padding: 16px 28px;
       border: 2px solid white;
       border-radius: 30px;
       color: white;
       text-decoration: none;
       font-weight: bold;
-      background: rgba(0,0,0,.35);
+      font-size: 18px;
+      background: rgba(0,0,0,.45);
     }
 
     section {
       min-height: 75vh;
-      padding: 90px 25px;
+      padding: 100px 25px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -110,26 +115,27 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0,0,0,.60);
+      background: rgba(0,0,0,.62);
     }
 
     .content {
       position: relative;
       z-index: 2;
-      max-width: 900px;
+      max-width: 950px;
       width: 100%;
       text-align: center;
     }
 
     .content h2 {
-      font-size: clamp(32px, 8vw, 55px);
-      margin-bottom: 25px;
+      font-size: clamp(38px, 9vw, 60px);
+      margin-bottom: 30px;
+      line-height: 1.15;
       text-shadow: 0 3px 10px #000;
     }
 
     .content p {
-      font-size: 18px;
-      margin-bottom: 16px;
+      font-size: 22px;
+      margin-bottom: 22px;
       text-shadow: 0 2px 7px #000;
     }
 
@@ -151,19 +157,55 @@
         url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=85");
     }
 
+    .interest {
+      background:
+        linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.82)),
+        url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=85");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .interest-box {
+      background: rgba(0,0,0,.60);
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 18px;
+      padding: 25px;
+      margin: 22px 0;
+      text-align: left;
+    }
+
+    .interest-box h3 {
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+
+    .interest-box p {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .interest-box a {
+      color: white;
+      font-size: 19px;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
     .contact {
       background:
-        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.82)),
+        linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.84)),
         url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1800&q=85");
+
       background-size: cover;
       background-position: center;
     }
 
     .email {
       display: block;
-      margin: 12px auto;
+      margin: 16px auto;
       color: white;
-      font-size: 18px;
+      font-size: 22px;
       font-weight: bold;
       text-decoration: none;
       word-break: break-word;
@@ -171,37 +213,69 @@
 
     .contact-button {
       display: inline-block;
-      margin-top: 25px;
-      padding: 15px 28px;
+      margin-top: 28px;
+      padding: 17px 30px;
       background: white;
       color: #111;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 17px;
+      font-size: 19px;
     }
 
     footer {
       background: #050505;
       color: #ccc;
       text-align: center;
-      padding: 25px 15px;
-      font-size: 14px;
+      padding: 30px 18px;
+      font-size: 17px;
     }
 
     @media (max-width: 600px) {
-      nav a {
-        font-size: 12px;
-        margin: 0 5px;
+
+      body {
+        font-size: 19px;
       }
 
-      .hero p,
+      nav {
+        padding: 15px 8px;
+      }
+
+      nav a {
+        font-size: 14px;
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 100px 22px 50px;
+      }
+
+      .hero p {
+        font-size: 21px;
+      }
+
       .content p {
-        font-size: 16px;
+        font-size: 20px;
+      }
+
+      .interest-box h3 {
+        font-size: 24px;
+      }
+
+      .interest-box p {
+        font-size: 19px;
+      }
+
+      .interest-box a {
+        font-size: 18px;
+      }
+
+      .email {
+        font-size: 20px;
       }
 
       section {
-        padding: 80px 20px;
+        padding: 90px 22px;
       }
     }
   </style>
@@ -214,11 +288,17 @@
     <a href="#ruta">LA RUTA</a>
     <a href="#aventura">AVENTURA</a>
     <a href="#filosofia">FILOSOFIA</a>
+    <a href="#interes">ADRECES D'INTERÈS</a>
     <a href="#contacte">CONTACTE</a>
   </nav>
 
+
+  <!-- INICI -->
+
   <header class="hero" id="inici">
+
     <div class="hero-content">
+
       <h1>TRANS-SAHARA</h1>
 
       <h2>Una nova manera de descobrir el Marroc</h2>
@@ -228,11 +308,19 @@
         esport i desenvolupament local.
       </p>
 
-      <a class="btn" href="#ruta">DESCOBREIX EL PROJECTE</a>
+      <a class="btn" href="#ruta">
+        DESCOBREIX EL PROJECTE
+      </a>
+
     </div>
+
   </header>
 
+
+  <!-- LA RUTA -->
+
   <section class="route" id="ruta">
+
     <div class="content">
 
       <h2>La ruta</h2>
@@ -253,9 +341,14 @@
       </p>
 
     </div>
+
   </section>
 
+
+  <!-- AVENTURA -->
+
   <section class="adventure" id="aventura">
+
     <div class="content">
 
       <h2>L'aventura</h2>
@@ -277,9 +370,14 @@
       </p>
 
     </div>
+
   </section>
 
+
+  <!-- FILOSOFIA -->
+
   <section class="philosophy" id="filosofia">
+
     <div class="content">
 
       <h2>Primer, l'autòcton</h2>
@@ -303,9 +401,103 @@
       </p>
 
     </div>
+
   </section>
 
+
+  <!-- ADRECES D'INTERES -->
+
+  <section class="interest" id="interes">
+
+    <div class="content">
+
+      <h2>Adreces d'interès</h2>
+
+      <p>
+        TRANS-SAHARA busca establir contacte amb institucions,
+        organismes i entitats que puguin ajudar a estudiar,
+        desenvolupar i fer realitat el projecte al Marroc.
+      </p>
+
+
+      <div class="interest-box">
+
+        <h3>Institucions i administracions</h3>
+
+        <p>
+          Organismes públics marroquins, autoritats regionals
+          i municipals vinculades als territoris per on
+          transcorre la ruta.
+        </p>
+
+        <p>
+          El seu paper és essencial per estudiar la viabilitat
+          territorial, els permisos necessaris i la integració
+          del projecte amb les poblacions locals.
+        </p>
+
+      </div>
+
+
+      <div class="interest-box">
+
+        <h3>Turisme i desenvolupament regional</h3>
+
+        <p>
+          Entitats relacionades amb la promoció turística
+          i el desenvolupament econòmic del Marroc.
+        </p>
+
+        <p>
+          TRANS-SAHARA pot crear una nova ruta turística
+          distribuïda pel territori i generar activitat
+          econòmica en pobles i zones rurals.
+        </p>
+
+      </div>
+
+
+      <div class="interest-box">
+
+        <h3>Universitats i centres tècnics</h3>
+
+        <p>
+          Universitats, escoles d'enginyeria i centres
+          d'investigació poden participar en l'estudi
+          de la ruta, les infraestructures, la mobilitat,
+          l'energia, l'aigua i la sostenibilitat.
+        </p>
+
+      </div>
+
+
+      <div class="interest-box">
+
+        <h3>Empreses i inversors</h3>
+
+        <p>
+          El projecte està obert a empreses, emprenedors
+          i inversors interessats en participar en el
+          desenvolupament de TRANS-SAHARA.
+        </p>
+
+        <p>
+          L'objectiu és crear un projecte viable que combini
+          aventura, turisme, desenvolupament local
+          i respecte pel territori.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACTE -->
+
   <section class="contact" id="contacte">
+
     <div class="content">
 
       <h2>Contacte</h2>
@@ -316,23 +508,33 @@
         en participar en el desenvolupament del projecte.
       </p>
 
-      <a class="email" href="mailto:info@trans-sahara.com">
+      <a class="email"
+         href="mailto:info@trans-sahara.com">
         info@trans-sahara.com
       </a>
 
-      <a class="email" href="mailto:ricardpuli65@gmail.com">
+      <a class="email"
+         href="mailto:ricardpuli65@gmail.com">
         ricardpuli65@gmail.com
       </a>
 
-      <a class="contact-button" href="mailto:ricardpuli65@gmail.com?subject=Informació%20sobre%20TRANS-SAHARA">
+      <a class="contact-button"
+         href="mailto:ricardpuli65@gmail.com?subject=Informació%20sobre%20TRANS-SAHARA">
+
         CONTACTA DIRECTAMENT
+
       </a>
 
     </div>
+
   </section>
 
+
   <footer>
-    © 2026 TRANS-SAHARA · Projecte d'aventura i desenvolupament local al Marroc
+
+    © 2026 TRANS-SAHARA ·
+    Projecte d'aventura i desenvolupament local al Marroc
+
   </footer>
 
 </body>
