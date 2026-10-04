@@ -80,9 +80,7 @@ nav a {
   line-height: .95;
   letter-spacing: 3px;
   margin-bottom: 35px;
-  text-shadow:
-    0 5px 15px #000,
-    0 0 25px rgba(0,0,0,.9);
+  text-shadow: 0 5px 15px #000, 0 0 25px rgba(0,0,0,.9);
 }
 
 .hero h2 {
@@ -100,15 +98,10 @@ nav a {
   text-shadow: 0 3px 9px #000;
 }
 
-/* =========================
-   TRES CONCEPTES PORTADA
-========================= */
-
 .hero-keywords {
   margin: 48px auto 10px;
   display: flex;
   justify-content: center;
-  align-items: stretch;
   gap: 18px;
   flex-wrap: wrap;
   max-width: 1050px;
@@ -124,14 +117,9 @@ nav a {
   background: rgba(0,0,0,.68);
   border: 3px solid rgba(255,255,255,.9);
   border-radius: 18px;
-  color: white;
   font-size: 30px;
-  line-height: 1.1;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow: 0 4px 10px #000;
-  box-shadow: 0 6px 20px rgba(0,0,0,.55);
 }
 
 .btn {
@@ -159,7 +147,6 @@ section {
   justify-content: center;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -184,25 +171,16 @@ section::before {
   margin-bottom: 55px;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 1px;
-
-  text-shadow:
-    0 5px 15px #000,
-    0 0 25px rgba(0,0,0,.9);
+  text-shadow: 0 5px 15px #000;
 }
 
 .content p {
   font-size: 27px;
-  line-height: 1.7;
   margin-bottom: 30px;
-
-  text-shadow:
-    0 3px 8px #000,
-    0 0 15px rgba(0,0,0,.7);
 }
 
 /* =========================
-   LA RUTA
+   FOTOS SECCIONS
 ========================= */
 
 .route {
@@ -211,15 +189,27 @@ section::before {
     url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1800&q=90");
 }
 
-/* =========================
-   1r BLOCK
-========================= */
-
 .block1 {
   background-image:
     linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.78)),
     url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=90");
 }
+
+.adventure {
+  background-image:
+    linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.52)),
+    url("https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=90");
+}
+
+.philosophy {
+  background-image:
+    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.60)),
+    url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=90");
+}
+
+/* =========================
+   BLOCK 1
+========================= */
 
 .block1 .content h2 {
   font-size: clamp(58px, 10vw, 105px);
@@ -229,7 +219,6 @@ section::before {
 .block-subtitle {
   font-size: 34px !important;
   font-weight: bold;
-  margin-bottom: 45px !important;
 }
 
 .stage-list {
@@ -245,8 +234,57 @@ section::before {
   padding: 22px 25px;
   margin-bottom: 18px;
   font-size: 24px;
-  line-height: 1.5;
 }
+
+/* ETAPA CLICABLE */
+
+details.stage {
+  cursor: pointer;
+}
+
+details.stage summary {
+  list-style: none;
+}
+
+details.stage summary::-webkit-details-marker {
+  display: none;
+}
+
+.click-info {
+  display: block;
+  margin-top: 12px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffd76a;
+}
+
+.stage-extra {
+  margin-top: 25px;
+  border-top: 2px solid rgba(255,255,255,.4);
+  padding-top: 25px;
+}
+
+.stage-extra h3 {
+  font-size: 30px;
+  margin: 25px 0 12px;
+}
+
+.stage-extra p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.stage-photo {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin: 15px 0 25px;
+}
+
+/* =========================
+   NOTA BLOCK
+========================= */
 
 .block-note {
   margin-top: 45px;
@@ -257,40 +295,13 @@ section::before {
 }
 
 /* =========================
-   L'AVENTURA
-========================= */
-
-.adventure {
-  background-image:
-    linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.52)),
-    url("https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=90");
-}
-
-/* =========================
-   FILOSOFIA
-========================= */
-
-.philosophy {
-  background-image:
-    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.60)),
-    url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=90");
-}
-
-/* =========================
-   ADRECES D'INTERÈS
+   INTERÈS
 ========================= */
 
 .interest {
   background:
     linear-gradient(rgba(0,0,0,.80), rgba(0,0,0,.88)),
     url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=90");
-
-  background-size: cover;
-  background-position: center;
-}
-
-.interest .content h2 {
-  font-size: clamp(55px, 9vw, 90px);
 }
 
 .interest-box {
@@ -304,14 +315,6 @@ section::before {
 
 .interest-box h3 {
   font-size: 35px;
-  line-height: 1.25;
-  margin-bottom: 20px;
-}
-
-.interest-box p {
-  font-size: 24px;
-  line-height: 1.7;
-  margin-bottom: 18px;
 }
 
 /* =========================
@@ -322,13 +325,6 @@ section::before {
   background:
     linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.88)),
     url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1800&q=90");
-
-  background-size: cover;
-  background-position: center;
-}
-
-.contact .content h2 {
-  font-size: clamp(65px, 11vw, 110px);
 }
 
 .email {
@@ -338,7 +334,6 @@ section::before {
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
-  word-break: break-word;
 }
 
 .contact-button {
@@ -359,110 +354,44 @@ footer {
   text-align: center;
   padding: 42px 22px;
   font-size: 20px;
-  line-height: 1.6;
 }
 
-/* =========================
-   MÒBIL
-========================= */
-
-@media (max-width: 600px) {
-
-  body {
-    font-size: 22px;
-  }
-
-  nav {
-    padding: 16px 8px;
-  }
+@media (max-width:600px) {
 
   nav a {
-    font-size: 16px;
-    margin: 0 10px;
-  }
-
-  .hero {
-    padding: 105px 18px 55px;
+    font-size:16px;
   }
 
   .hero h1 {
-    font-size: 58px;
+    font-size:58px;
   }
 
   .hero h2 {
-    font-size: 34px;
-  }
-
-  .hero p {
-    font-size: 25px;
-  }
-
-  .hero-keyword {
-    flex: 1 1 100%;
-    min-height: 90px;
-    font-size: 29px;
-  }
-
-  section {
-    padding: 105px 20px 75px;
+    font-size:34px;
   }
 
   .content h2 {
-    font-size: 17vw;
+    font-size:17vw;
   }
 
   .content p {
-    font-size: 24px;
-  }
-
-  .block1 .content h2 {
-    font-size: 14vw;
-  }
-
-  .block-subtitle {
-    font-size: 28px !important;
+    font-size:24px;
   }
 
   .stage {
-    font-size: 22px;
-    padding: 19px;
+    font-size:22px;
   }
 
-  .philosophy .content h2 {
-    font-size: 15vw;
+  .stage-photo {
+    height:220px;
   }
 
-  .interest .content h2 {
-    font-size: 13vw;
-  }
-
-  .interest-box {
-    padding: 27px 20px;
-  }
-
-  .interest-box h3 {
-    font-size: 31px;
-  }
-
-  .interest-box p {
-    font-size: 23px;
-  }
-
-  .contact .content h2 {
-    font-size: 16vw;
-  }
-
-  .email {
-    font-size: 23px;
-  }
 }
 
 </style>
 </head>
 
 <body>
-
-<!-- MENÚ -->
 
 <nav>
 <a href="#inici">INICI</a>
@@ -473,8 +402,6 @@ footer {
 <a href="#interes">ADRECES D'INTERÈS</a>
 <a href="#contacte">CONTACTE</a>
 </nav>
-
-<!-- PORTADA -->
 
 <header class="hero" id="inici">
 
@@ -497,15 +424,10 @@ cultura, esport i desenvolupament local.
 
 </div>
 
-<a class="btn" href="#ruta">
-DESCOBREIX EL PROJECTE
-</a>
+<a class="btn" href="#ruta">DESCOBREIX EL PROJECTE</a>
 
 </div>
-
 </header>
-
-<!-- LA RUTA -->
 
 <section class="route" id="ruta">
 
@@ -533,7 +455,6 @@ paisatges, costa, muntanya i desert.
 </p>
 
 </div>
-
 </section>
 
 <!-- 1r BLOCK -->
@@ -604,13 +525,83 @@ Aproximació a El Jadida<br>
 Aproximadament 25 km
 </div>
 
-<div class="stage">
+
+<!-- ETAPA 8 CLICABLE -->
+
+<details class="stage">
+
+<summary>
+
 <strong>ETAPA 8</strong><br>
 Arribada a El Jadida i a l'oceà Atlàntic<br>
 Aproximadament 25 km
-</div>
+
+<span class="click-info">
+▼ CLICA AQUÍ · DESCOBREIX QUÈ POTS VISITAR
+</span>
+
+</summary>
+
+<div class="stage-extra">
+
+<h3>🏰 CIUTAT PORTUGUESA D'EL JADIDA</h3>
+
+<p>
+En arribar a El Jadida, l'aventurer pot
+descobrir l'antiga ciutat portuguesa de
+Mazagan, les seves muralles, bastions,
+carrerons i la famosa cisterna portuguesa.
+</p>
+
+<img
+class="stage-photo"
+src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=85"
+alt="Paisatge del Marroc">
+
+<h3>🌊 L'OCEÀ ATLÀNTIC</h3>
+
+<p>
+Després d'uns 200 quilòmetres des de Marrakech,
+l'arribada a l'Atlàntic marca el final
+del primer gran bloc de TRANS-SAHARA.
+</p>
+
+<h3>🚆 OPCIONAL · CASABLANCA</h3>
+
+<p>
+Qui ho desitgi podrà dedicar un dia
+a visitar Casablanca abans de continuar
+l'aventura.
+</p>
+
+<p>
+La idea és descansar a El Jadida,
+fer la visita opcional a Casablanca
+i tornar després a El Jadida per reprendre
+la ruta.
+</p>
+
+<h3>🌊 OPCIONAL · OUALIDIA I LES COVES</h3>
+
+<p>
+L'aventurer que disposi de més temps
+també podrà descobrir la costa de
+Oualidia, la seva llacuna i les coves
+de la costa atlàntica.
+</p>
+
+<p>
+Aquestes visites són completament opcionals.
+TRANS-SAHARA proposa possibilitats;
+<strong>l'aventurer decideix la seva aventura.</strong>
+</p>
 
 </div>
+
+</details>
+
+</div>
+
 
 <div class="block-note">
 
@@ -643,10 +634,8 @@ a descobrir noves alternatives.
 </div>
 
 </div>
-
 </section>
 
-<!-- L'AVENTURA -->
 
 <section class="adventure" id="aventura">
 
@@ -676,19 +665,14 @@ al llarg del recorregut.
 </p>
 
 </div>
-
 </section>
 
-<!-- FILOSOFIA -->
 
 <section class="philosophy" id="filosofia">
 
 <div class="content">
 
-<h2>
-PRIMER,<br>
-L'AUTÒCTON
-</h2>
+<h2>PRIMER,<br>L'AUTÒCTON</h2>
 
 <p>
 La filosofia del projecte és clara:
@@ -712,10 +696,8 @@ i el respecte absolut pel paisatge.
 </p>
 
 </div>
-
 </section>
 
-<!-- ADRECES D'INTERÈS -->
 
 <section class="interest" id="interes">
 
@@ -742,14 +724,6 @@ vinculades als territoris
 per on transcorre la ruta.
 </p>
 
-<p>
-El seu paper pot ser essencial
-per estudiar la viabilitat territorial,
-els permisos necessaris
-i la integració del projecte
-amb les poblacions locals.
-</p>
-
 </div>
 
 <div class="interest-box">
@@ -757,19 +731,8 @@ amb les poblacions locals.
 <h3>Turisme i desenvolupament regional</h3>
 
 <p>
-Entitats relacionades
-amb la promoció turística
-i el desenvolupament econòmic
-del Marroc.
-</p>
-
-<p>
-TRANS-SAHARA planteja
-la possibilitat de crear
-una nova ruta turística
-distribuïda pel territori
-i generar activitat econòmica
-en pobles i zones rurals.
+Entitats relacionades amb la promoció turística
+i el desenvolupament econòmic del Marroc.
 </p>
 
 </div>
@@ -780,11 +743,8 @@ en pobles i zones rurals.
 
 <p>
 Universitats, escoles d'enginyeria
-i centres d'investigació
-podrien participar en l'estudi
-de la ruta, les infraestructures,
-la mobilitat, l'energia,
-l'aigua i la sostenibilitat.
+i centres d'investigació poden participar
+en l'estudi de la ruta i les infraestructures.
 </p>
 
 </div>
@@ -794,29 +754,16 @@ l'aigua i la sostenibilitat.
 <h3>Empreses i inversors</h3>
 
 <p>
-El projecte està obert
-a empreses, emprenedors
-i inversors interessats
-a estudiar la possibilitat
-de participar en el desenvolupament
-de TRANS-SAHARA.
-</p>
-
-<p>
-L'objectiu és crear
-un projecte viable
-que combini aventura,
-turisme, desenvolupament local
-i respecte pel territori.
+El projecte està obert a empreses,
+emprenedors i inversors interessats
+en el desenvolupament de TRANS-SAHARA.
 </p>
 
 </div>
 
 </div>
-
 </section>
 
-<!-- CONTACTE -->
 
 <section class="contact" id="contacte">
 
@@ -829,7 +776,6 @@ TRANS-SAHARA està obert
 a col·laboracions amb institucions,
 empreses, inversors
 i persones interessades
-a estudiar i participar
 en el desenvolupament del projecte.
 </p>
 
@@ -848,7 +794,6 @@ CONTACTA DIRECTAMENT
 </a>
 
 </div>
-
 </section>
 
 <footer>
