@@ -178,10 +178,6 @@ section::before {
   text-align: center;
 }
 
-/* =========================
-   TÍTOLS GRANS
-========================= */
-
 .content h2 {
   font-size: clamp(70px, 12vw, 130px);
   line-height: .95;
@@ -211,15 +207,53 @@ section::before {
 
 .route {
   background-image:
-    linear-gradient(
-      rgba(0,0,0,.20),
-      rgba(0,0,0,.52)
-    ),
+    linear-gradient(rgba(0,0,0,.20), rgba(0,0,0,.52)),
     url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1800&q=90");
+}
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+/* =========================
+   1r BLOCK
+========================= */
+
+.block1 {
+  background-image:
+    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.78)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=90");
+}
+
+.block1 .content h2 {
+  font-size: clamp(58px, 10vw, 105px);
+  margin-bottom: 25px;
+}
+
+.block-subtitle {
+  font-size: 34px !important;
+  font-weight: bold;
+  margin-bottom: 45px !important;
+}
+
+.stage-list {
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: left;
+}
+
+.stage {
+  background: rgba(0,0,0,.68);
+  border: 2px solid rgba(255,255,255,.55);
+  border-radius: 18px;
+  padding: 22px 25px;
+  margin-bottom: 18px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.block-note {
+  margin-top: 45px;
+  padding: 30px;
+  background: rgba(0,0,0,.72);
+  border-radius: 20px;
+  border: 2px solid rgba(255,255,255,.55);
 }
 
 /* =========================
@@ -228,15 +262,8 @@ section::before {
 
 .adventure {
   background-image:
-    linear-gradient(
-      rgba(0,0,0,.18),
-      rgba(0,0,0,.52)
-    ),
+    linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.52)),
     url("https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1800&q=90");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* =========================
@@ -245,15 +272,8 @@ section::before {
 
 .philosophy {
   background-image:
-    linear-gradient(
-      rgba(0,0,0,.25),
-      rgba(0,0,0,.60)
-    ),
+    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.60)),
     url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=90");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* =========================
@@ -262,10 +282,7 @@ section::before {
 
 .interest {
   background:
-    linear-gradient(
-      rgba(0,0,0,.80),
-      rgba(0,0,0,.88)
-    ),
+    linear-gradient(rgba(0,0,0,.80), rgba(0,0,0,.88)),
     url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=90");
 
   background-size: cover;
@@ -303,10 +320,7 @@ section::before {
 
 .contact {
   background:
-    linear-gradient(
-      rgba(0,0,0,.72),
-      rgba(0,0,0,.88)
-    ),
+    linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.88)),
     url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1800&q=90");
 
   background-size: cover;
@@ -338,10 +352,6 @@ section::before {
   font-weight: bold;
   font-size: 23px;
 }
-
-/* =========================
-   PEU
-========================= */
 
 footer {
   background: #050505;
@@ -377,54 +387,45 @@ footer {
 
   .hero h1 {
     font-size: 58px;
-    line-height: .95;
   }
 
   .hero h2 {
     font-size: 34px;
-    line-height: 1.15;
   }
 
   .hero p {
     font-size: 25px;
-    line-height: 1.55;
-  }
-
-  .hero-keywords {
-    margin-top: 35px;
-    gap: 14px;
   }
 
   .hero-keyword {
     flex: 1 1 100%;
     min-height: 90px;
-    padding: 18px 12px;
     font-size: 29px;
-    border-radius: 16px;
-  }
-
-  .btn {
-    font-size: 20px;
-    padding: 18px 27px;
-    margin-top: 32px;
   }
 
   section {
-    min-height: 100vh;
     padding: 105px 20px 75px;
   }
 
   .content h2 {
     font-size: 17vw;
-    line-height: .92;
-    margin-bottom: 48px;
-    letter-spacing: 0;
   }
 
   .content p {
     font-size: 24px;
-    line-height: 1.65;
-    margin-bottom: 28px;
+  }
+
+  .block1 .content h2 {
+    font-size: 14vw;
+  }
+
+  .block-subtitle {
+    font-size: 28px !important;
+  }
+
+  .stage {
+    font-size: 22px;
+    padding: 19px;
   }
 
   .philosophy .content h2 {
@@ -433,12 +434,10 @@ footer {
 
   .interest .content h2 {
     font-size: 13vw;
-    line-height: 1;
   }
 
   .interest-box {
     padding: 27px 20px;
-    margin: 27px 0;
   }
 
   .interest-box h3 {
@@ -456,15 +455,6 @@ footer {
   .email {
     font-size: 23px;
   }
-
-  .contact-button {
-    font-size: 21px;
-    padding: 19px 27px;
-  }
-
-  footer {
-    font-size: 19px;
-  }
 }
 
 </style>
@@ -477,12 +467,12 @@ footer {
 <nav>
 <a href="#inici">INICI</a>
 <a href="#ruta">LA RUTA</a>
+<a href="#block1">1r BLOCK</a>
 <a href="#aventura">AVENTURA</a>
 <a href="#filosofia">FILOSOFIA</a>
 <a href="#interes">ADRECES D'INTERÈS</a>
 <a href="#contacte">CONTACTE</a>
 </nav>
-
 
 <!-- PORTADA -->
 
@@ -501,17 +491,9 @@ cultura, esport i desenvolupament local.
 
 <div class="hero-keywords">
 
-<div class="hero-keyword">
-LA RUTA
-</div>
-
-<div class="hero-keyword">
-L'AVENTURA
-</div>
-
-<div class="hero-keyword">
-PRIMER, L'AUTÒCTON
-</div>
+<div class="hero-keyword">LA RUTA</div>
+<div class="hero-keyword">L'AVENTURA</div>
+<div class="hero-keyword">PRIMER, L'AUTÒCTON</div>
 
 </div>
 
@@ -522,7 +504,6 @@ DESCOBREIX EL PROJECTE
 </div>
 
 </header>
-
 
 <!-- LA RUTA -->
 
@@ -555,6 +536,115 @@ paisatges, costa, muntanya i desert.
 
 </section>
 
+<!-- 1r BLOCK -->
+
+<section class="block1" id="block1">
+
+<div class="content">
+
+<h2>1r BLOCK</h2>
+
+<p class="block-subtitle">
+MARRAKECH → EL JADIDA
+</p>
+
+<p>
+Uns <strong>200 quilòmetres</strong> dividits
+en <strong>8 etapes orientatives</strong>.
+</p>
+
+<p>
+Aquest primer bloc surt de Marrakech i avança
+cap a l'Atlàntic fins arribar a El Jadida.
+La <strong>N7</strong> serveix com un dels grans
+eixos de referència del recorregut.
+</p>
+
+<div class="stage-list">
+
+<div class="stage">
+<strong>ETAPA 1</strong><br>
+Marrakech → Tamansourt / Harbil<br>
+Aproximadament 24 km
+</div>
+
+<div class="stage">
+<strong>ETAPA 2</strong><br>
+Tamansourt / Harbil → Sidi Bou Othmane<br>
+Aproximadament 26 km
+</div>
+
+<div class="stage">
+<strong>ETAPA 3</strong><br>
+Sidi Bou Othmane → zona de Ben Guerir<br>
+Aproximadament 25 km
+</div>
+
+<div class="stage">
+<strong>ETAPA 4</strong><br>
+Zona de Ben Guerir → següent punt de referència<br>
+Aproximadament 25 km
+</div>
+
+<div class="stage">
+<strong>ETAPA 5</strong><br>
+Continuació cap a les planes de Doukkala<br>
+Aproximadament 25 km
+</div>
+
+<div class="stage">
+<strong>ETAPA 6</strong><br>
+Travessa del territori rural cap a la costa<br>
+Aproximadament 25 km
+</div>
+
+<div class="stage">
+<strong>ETAPA 7</strong><br>
+Aproximació a El Jadida<br>
+Aproximadament 25 km
+</div>
+
+<div class="stage">
+<strong>ETAPA 8</strong><br>
+Arribada a El Jadida i a l'oceà Atlàntic<br>
+Aproximadament 25 km
+</div>
+
+</div>
+
+<div class="block-note">
+
+<p>
+<strong>TRANS-SAHARA NO VOL MARCAR UN CAMÍ ÚNIC.</strong>
+</p>
+
+<p>
+Els punts i les etapes són orientatius.
+TRANS-SAHARA proposa llocs de referència,
+però serà el mateix aventurer qui decidirà
+per on vol passar i què vol descobrir.
+</p>
+
+<p>
+Carreteres, pistes, camins, pobles i paisatges
+permetran moltes variants.
+L'objectiu no és seguir una línia exacta,
+sinó <strong>viure el territori</strong>.
+</p>
+
+<p>
+Amb el temps, els mateixos aventurers
+podran compartir nous camins,
+llocs d'interès i experiències,
+ajudant els que vinguin darrere
+a descobrir noves alternatives.
+</p>
+
+</div>
+
+</div>
+
+</section>
 
 <!-- L'AVENTURA -->
 
@@ -588,7 +678,6 @@ al llarg del recorregut.
 </div>
 
 </section>
-
 
 <!-- FILOSOFIA -->
 
@@ -625,7 +714,6 @@ i el respecte absolut pel paisatge.
 </div>
 
 </section>
-
 
 <!-- ADRECES D'INTERÈS -->
 
@@ -728,7 +816,6 @@ i respecte pel territori.
 
 </section>
 
-
 <!-- CONTACTE -->
 
 <section class="contact" id="contacte">
@@ -746,15 +833,11 @@ a estudiar i participar
 en el desenvolupament del projecte.
 </p>
 
-<a
-class="email"
-href="mailto:info@trans-sahara.com">
+<a class="email" href="mailto:info@trans-sahara.com">
 info@trans-sahara.com
 </a>
 
-<a
-class="email"
-href="mailto:ricardpuli65@gmail.com">
+<a class="email" href="mailto:ricardpuli65@gmail.com">
 ricardpuli65@gmail.com
 </a>
 
@@ -767,9 +850,6 @@ CONTACTA DIRECTAMENT
 </div>
 
 </section>
-
-
-<!-- PEU -->
 
 <footer>
 © 2026 TRANS-SAHARA ·
