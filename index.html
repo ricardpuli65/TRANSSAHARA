@@ -50,7 +50,6 @@ nav a {
   font-weight: bold;
 }
 
-
 /* =========================
    PORTADA
 ========================= */
@@ -61,7 +60,6 @@ nav a {
   align-items: center;
   justify-content: center;
   text-align: center;
-
   padding: 110px 25px 60px;
 
   background:
@@ -103,76 +101,52 @@ nav a {
   text-shadow: 0 3px 9px #000;
 }
 
-
 /* =========================
    TRES CONCEPTES PORTADA
 ========================= */
 
 .hero-keywords {
   margin: 48px auto 10px;
-
   display: flex;
   justify-content: center;
   align-items: stretch;
-
   gap: 18px;
   flex-wrap: wrap;
-
   max-width: 1050px;
 }
 
 .hero-keyword {
   flex: 1 1 260px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-height: 120px;
   padding: 22px 18px;
-
   background: rgba(0,0,0,.68);
-
   border: 3px solid rgba(255,255,255,.9);
   border-radius: 18px;
-
   color: white;
-
   font-size: 30px;
   line-height: 1.1;
-
   font-weight: 900;
-
   text-transform: uppercase;
-
   letter-spacing: 1px;
-
   text-shadow: 0 4px 10px #000;
-
   box-shadow: 0 6px 20px rgba(0,0,0,.55);
 }
 
 .btn {
   display: inline-block;
-
   margin-top: 40px;
-
   padding: 19px 34px;
-
   border: 2px solid white;
   border-radius: 40px;
-
   color: white;
-
   text-decoration: none;
-
   font-weight: bold;
-
   font-size: 22px;
-
   background: rgba(0,0,0,.58);
 }
-
 
 /* =========================
    SECCIONS
@@ -180,57 +154,40 @@ nav a {
 
 section {
   min-height: 100vh;
-
   padding: 120px 30px 90px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-size: cover;
   background-position: center;
-
   position: relative;
 }
 
 section::before {
   content: "";
-
   position: absolute;
   inset: 0;
-
   background: rgba(0,0,0,.56);
 }
 
 .content {
   position: relative;
-
   z-index: 2;
-
   max-width: 1050px;
-
   width: 100%;
-
   text-align: center;
 }
-
 
 /* =========================
    TÍTOLS GRANS
 ========================= */
 
 .content h2 {
-
   font-size: clamp(70px, 12vw, 130px);
-
   line-height: .95;
-
   margin-bottom: 55px;
-
   font-weight: 900;
-
   text-transform: uppercase;
-
   letter-spacing: 1px;
 
   text-shadow:
@@ -239,11 +196,8 @@ section::before {
 }
 
 .content p {
-
   font-size: 27px;
-
   line-height: 1.7;
-
   margin-bottom: 30px;
 
   text-shadow:
@@ -251,10 +205,8 @@ section::before {
     0 0 15px rgba(0,0,0,.7);
 }
 
-
 /* =========================
    LA RUTA
-   Aventurer / desert
 ========================= */
 
 .route {
@@ -271,190 +223,131 @@ section::before {
 }
 
 /* =========================
-   AVENTURA
+   L'AVENTURA
+   NOVA FOTO
 ========================= */
 
 .adventure {
-
   background-image:
-
     linear-gradient(
-      rgba(0,0,0,.22),
-      rgba(0,0,0,.58)
+      rgba(0,0,0,.20),
+      rgba(0,0,0,.55)
     ),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=90");
 
-    url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1800&q=90");
-
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 
 /* =========================
    FILOSOFIA
 ========================= */
 
 .philosophy {
-
   background-image:
-
     linear-gradient(
       rgba(0,0,0,.25),
       rgba(0,0,0,.60)
     ),
-
     url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=90");
-
 }
-
 
 /* =========================
    ADRECES D'INTERÈS
 ========================= */
 
 .interest {
-
   background:
-
     linear-gradient(
       rgba(0,0,0,.80),
       rgba(0,0,0,.88)
     ),
-
     url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1800&q=90");
 
   background-size: cover;
-
   background-position: center;
 }
 
-
-/* Títol d'adreces una mica més petit */
-
 .interest .content h2 {
-
   font-size: clamp(55px, 9vw, 90px);
-
 }
 
-
 .interest-box {
-
   background: rgba(0,0,0,.72);
-
   border: 2px solid rgba(255,255,255,.45);
-
   border-radius: 22px;
-
   padding: 36px;
-
   margin: 32px 0;
-
   text-align: left;
 }
 
 .interest-box h3 {
-
   font-size: 35px;
-
   line-height: 1.25;
-
   margin-bottom: 20px;
 }
 
 .interest-box p {
-
   font-size: 24px;
-
   line-height: 1.7;
-
   margin-bottom: 18px;
 }
-
 
 /* =========================
    CONTACTE
 ========================= */
 
 .contact {
-
   background:
-
     linear-gradient(
       rgba(0,0,0,.72),
       rgba(0,0,0,.88)
     ),
-
     url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1800&q=90");
 
   background-size: cover;
-
   background-position: center;
 }
 
 .contact .content h2 {
-
   font-size: clamp(65px, 11vw, 110px);
-
 }
 
-
 .email {
-
   display: block;
-
   margin: 25px auto;
-
   color: white;
-
   font-size: 28px;
-
   font-weight: bold;
-
   text-decoration: none;
-
   word-break: break-word;
 }
 
 .contact-button {
-
   display: inline-block;
-
   margin-top: 38px;
-
   padding: 21px 38px;
-
   background: white;
-
   color: #111;
-
   border-radius: 40px;
-
   text-decoration: none;
-
   font-weight: bold;
-
   font-size: 23px;
 }
-
 
 /* =========================
    PEU
 ========================= */
 
 footer {
-
   background: #050505;
-
   color: #ccc;
-
   text-align: center;
-
   padding: 42px 22px;
-
   font-size: 20px;
-
   line-height: 1.6;
 }
-
 
 /* =========================
    MÒBIL
@@ -466,700 +359,419 @@ footer {
     font-size: 22px;
   }
 
-
   nav {
-
     padding: 16px 8px;
-
   }
-
 
   nav a {
-
     font-size: 16px;
-
     margin: 0 10px;
-
   }
-
-
-  /* PORTADA */
 
   .hero {
-
-    padding:
-      105px
-      18px
-      55px;
-
+    padding: 105px 18px 55px;
   }
-
 
   .hero h1 {
-
     font-size: 58px;
-
     line-height: .95;
-
   }
-
 
   .hero h2 {
-
     font-size: 34px;
-
     line-height: 1.15;
-
   }
-
 
   .hero p {
-
     font-size: 25px;
-
     line-height: 1.55;
-
   }
-
 
   .hero-keywords {
-
     margin-top: 35px;
-
     gap: 14px;
-
   }
-
 
   .hero-keyword {
-
     flex: 1 1 100%;
-
     min-height: 90px;
-
     padding: 18px 12px;
-
     font-size: 29px;
-
     border-radius: 16px;
-
   }
-
 
   .btn {
-
     font-size: 20px;
-
     padding: 18px 27px;
-
     margin-top: 32px;
-
   }
-
-
-  /* SECCIONS */
 
   section {
-
     min-height: 100vh;
-
-    padding:
-      105px
-      20px
-      75px;
-
+    padding: 105px 20px 75px;
   }
-
-
-  /*
-     Aquests són els títols
-     que ocupen bona part
-     de la pantalla.
-  */
 
   .content h2 {
-
     font-size: 17vw;
-
     line-height: .92;
-
     margin-bottom: 48px;
-
     letter-spacing: 0;
-
   }
-
 
   .content p {
-
     font-size: 24px;
-
     line-height: 1.65;
-
     margin-bottom: 28px;
-
   }
-
-
-  /* PRIMER L'AUTÒCTON necessita
-     adaptar-se a dues línies */
 
   .philosophy .content h2 {
-
     font-size: 15vw;
-
   }
-
-
-  /* ADRECES D'INTERÈS */
 
   .interest .content h2 {
-
     font-size: 13vw;
-
     line-height: 1;
-
   }
-
 
   .interest-box {
-
     padding: 27px 20px;
-
     margin: 27px 0;
-
   }
-
 
   .interest-box h3 {
-
     font-size: 31px;
-
   }
-
 
   .interest-box p {
-
     font-size: 23px;
-
   }
-
-
-  /* CONTACTE */
 
   .contact .content h2 {
-
     font-size: 16vw;
-
   }
-
 
   .email {
-
     font-size: 23px;
-
   }
-
 
   .contact-button {
-
     font-size: 21px;
-
     padding: 19px 27px;
-
   }
-
 
   footer {
-
     font-size: 19px;
-
   }
-
 }
 
 </style>
 </head>
 
-
 <body>
 
-
-<!-- =====================
-     MENÚ
-===================== -->
+<!-- MENÚ -->
 
 <nav>
-
 <a href="#inici">INICI</a>
-
 <a href="#ruta">LA RUTA</a>
-
 <a href="#aventura">AVENTURA</a>
-
 <a href="#filosofia">FILOSOFIA</a>
-
 <a href="#interes">ADRECES D'INTERÈS</a>
-
 <a href="#contacte">CONTACTE</a>
-
 </nav>
 
 
-
-<!-- =====================
-     PORTADA
-===================== -->
+<!-- PORTADA -->
 
 <header class="hero" id="inici">
 
 <div class="hero-content">
 
-
 <h1>TRANS-SAHARA</h1>
 
-
-<h2>
-Una nova manera de descobrir el Marroc
-</h2>
-
+<h2>Una nova manera de descobrir el Marroc</h2>
 
 <p>
-
 Una gran ruta d'aventura que uneix paisatge,
 cultura, esport i desenvolupament local.
-
 </p>
-
-
 
 <div class="hero-keywords">
 
-
 <div class="hero-keyword">
-
 LA RUTA
-
 </div>
 
-
 <div class="hero-keyword">
-
 L'AVENTURA
-
 </div>
-
 
 <div class="hero-keyword">
-
 PRIMER, L'AUTÒCTON
-
 </div>
 
-
 </div>
-
-
 
 <a class="btn" href="#ruta">
-
 DESCOBREIX EL PROJECTE
-
 </a>
-
 
 </div>
 
 </header>
 
 
-
-<!-- =====================
-     LA RUTA
-===================== -->
+<!-- LA RUTA -->
 
 <section class="route" id="ruta">
 
-
 <div class="content">
 
-
-<h2>
-LA RUTA
-</h2>
-
+<h2>LA RUTA</h2>
 
 <p>
-
 TRANS-SAHARA és una gran ruta circular
 d'aproximadament <strong>895 quilòmetres</strong>,
 dividida en <strong>5 blocs i 36 etapes</strong>.
-
 </p>
 
-
 <p>
-
 <strong>
-
 Marrakech → El Jadida → Safi →
 Essaouira → Agadir → Marrakech.
-
 </strong>
-
 </p>
 
-
 <p>
-
 Cada etapa permet descobrir el territori
 a poc a poc, connectant pobles,
 paisatges, costa, muntanya i desert.
-
 </p>
-
 
 </div>
 
 </section>
 
 
-
-<!-- =====================
-     AVENTURA
-===================== -->
+<!-- L'AVENTURA -->
 
 <section class="adventure" id="aventura">
 
-
 <div class="content">
 
-
-<h2>
-L'AVENTURA
-</h2>
-
+<h2>L'AVENTURA</h2>
 
 <p>
-
 TRANS-SAHARA vol convertir el recorregut
 en una experiència que es pugui viure
 de moltes maneres.
-
 </p>
 
-
 <p>
-
 Caminar, pedalar amb buggy,
 avançar amb camell i,
 en punts seleccionats,
 experimentar activitats especials
 com tirolines o globus aerostàtics.
-
 </p>
 
-
 <p>
-
 Cada aventurer disposarà
 d'una credencial pròpia
 que podrà anar segellant
 al llarg del recorregut.
-
 </p>
-
 
 </div>
 
 </section>
 
 
-
-<!-- =====================
-     FILOSOFIA
-===================== -->
+<!-- FILOSOFIA -->
 
 <section class="philosophy" id="filosofia">
 
-
 <div class="content">
-
 
 <h2>
 PRIMER,<br>
 L'AUTÒCTON
 </h2>
 
-
 <p>
-
 La filosofia del projecte és clara:
 el desenvolupament de TRANS-SAHARA
 ha de beneficiar primer les persones
 que viuen al territori.
-
 </p>
 
-
 <p>
-
 Allotjaments, restauració,
 transport, guies,
 comerç i serveis poden ser gestionats
 per empreses i famílies locals.
-
 </p>
 
-
 <p>
-
 El projecte aposta també
 per l'energia solar,
 la gestió responsable de l'aigua
 i el respecte absolut pel paisatge.
-
 </p>
-
 
 </div>
 
 </section>
 
 
-
-<!-- =====================
-     ADRECES D'INTERÈS
-===================== -->
+<!-- ADRECES D'INTERÈS -->
 
 <section class="interest" id="interes">
 
-
 <div class="content">
 
-
-<h2>
-ADRECES D'INTERÈS
-</h2>
-
+<h2>ADRECES D'INTERÈS</h2>
 
 <p>
-
 TRANS-SAHARA busca establir contacte
 amb institucions, organismes i entitats
 que puguin ajudar a estudiar,
 desenvolupar i fer realitat
 el projecte al Marroc.
-
 </p>
-
-
 
 <div class="interest-box">
 
-
-<h3>
-Institucions i administracions
-</h3>
-
+<h3>Institucions i administracions</h3>
 
 <p>
-
 Organismes públics marroquins,
 autoritats regionals i municipals
 vinculades als territoris
 per on transcorre la ruta.
-
 </p>
 
-
 <p>
-
 El seu paper pot ser essencial
 per estudiar la viabilitat territorial,
 els permisos necessaris
 i la integració del projecte
 amb les poblacions locals.
-
 </p>
-
 
 </div>
 
-
-
 <div class="interest-box">
 
-
-<h3>
-Turisme i desenvolupament regional
-</h3>
-
+<h3>Turisme i desenvolupament regional</h3>
 
 <p>
-
 Entitats relacionades
 amb la promoció turística
 i el desenvolupament econòmic
 del Marroc.
-
 </p>
 
-
 <p>
-
 TRANS-SAHARA planteja
 la possibilitat de crear
 una nova ruta turística
 distribuïda pel territori
 i generar activitat econòmica
 en pobles i zones rurals.
-
 </p>
-
 
 </div>
 
-
-
 <div class="interest-box">
 
-
-<h3>
-Universitats i centres tècnics
-</h3>
-
+<h3>Universitats i centres tècnics</h3>
 
 <p>
-
 Universitats, escoles d'enginyeria
 i centres d'investigació
 podrien participar en l'estudi
 de la ruta, les infraestructures,
 la mobilitat, l'energia,
 l'aigua i la sostenibilitat.
-
 </p>
-
 
 </div>
 
-
-
 <div class="interest-box">
 
-
-<h3>
-Empreses i inversors
-</h3>
-
+<h3>Empreses i inversors</h3>
 
 <p>
-
 El projecte està obert
 a empreses, emprenedors
 i inversors interessats
 a estudiar la possibilitat
 de participar en el desenvolupament
 de TRANS-SAHARA.
-
 </p>
 
-
 <p>
-
 L'objectiu és crear
 un projecte viable
 que combini aventura,
 turisme, desenvolupament local
 i respecte pel territori.
-
 </p>
 
-
 </div>
-
 
 </div>
 
 </section>
 
 
-
-<!-- =====================
-     CONTACTE
-===================== -->
+<!-- CONTACTE -->
 
 <section class="contact" id="contacte">
 
-
 <div class="content">
 
-
-<h2>
-CONTACTE
-</h2>
-
+<h2>CONTACTE</h2>
 
 <p>
-
 TRANS-SAHARA està obert
 a col·laboracions amb institucions,
 empreses, inversors
 i persones interessades
 a estudiar i participar
 en el desenvolupament del projecte.
-
 </p>
-
-
 
 <a
 class="email"
 href="mailto:info@trans-sahara.com">
-
 info@trans-sahara.com
-
 </a>
-
-
 
 <a
 class="email"
 href="mailto:ricardpuli65@gmail.com">
-
 ricardpuli65@gmail.com
-
 </a>
-
-
 
 <a
 class="contact-button"
 href="mailto:ricardpuli65@gmail.com?subject=Informació%20sobre%20TRANS-SAHARA">
-
 CONTACTA DIRECTAMENT
-
 </a>
-
 
 </div>
 
 </section>
 
 
-
-<!-- =====================
-     PEU
-===================== -->
+<!-- PEU -->
 
 <footer>
-
 © 2026 TRANS-SAHARA ·
 Projecte d'aventura i desenvolupament local al Marroc
-
 </footer>
-
 
 </body>
 </html>
